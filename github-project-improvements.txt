@@ -1,0 +1,143 @@
+# Bitcoin Key Educational Tool
+
+![Bitcoin Key Educational Tool](https://img.shields.io/badge/Educational-Project-blue)
+![Python](https://img.shields.io/badge/Python-3.7+-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
+
+این پروژه یک ابزار آموزشی برای درک مفاهیم کلیدهای خصوصی بیت‌کوین و کریپتوگرافی است. هدف این برنامه، نمایش نحوه تولید کلیدهای خصوصی و آدرس‌های بیت‌کوین و بررسی موجودی آنها با استفاده از API های عمومی است.
+
+## ⚠️ هشدار آموزشی
+
+این برنامه **صرفاً برای اهداف آموزشی** طراحی شده است. احتمال پیدا کردن یک کلید خصوصی با موجودی به روش تصادفی تقریباً غیرممکن است (به دلیل فضای بسیار عظیم کلیدهای خصوصی ممکن).
+
+برای اطلاعات بیشتر درباره چرایی این امر، به بخش [چرا پیدا کردن کلید تصادفی غیرممکن است؟](#why-impossible) مراجعه کنید.
+
+## 🌟 ویژگی‌ها
+
+- تولید کلیدهای خصوصی واقعی بیت‌کوین با استفاده از کتابخانه‌های استاندارد
+- بررسی موجودی آدرس‌های بیت‌کوین با استفاده از چندین API برای جلوگیری از محدودیت‌های نرخ درخواست
+- رابط کاربری کنسول با رنگ‌های جذاب
+- گزارش دقیق پیشرفت و بازخورد
+- ذخیره خودکار نتایج
+- مدیریت پیشرفته خطاها
+- سیستم لاگ‌گیری کامل
+
+## 🛠️ نصب و راه‌اندازی
+
+1. کلون کردن مخزن:
+```bash
+git clone https://github.com/yourusername/bitcoin-key-educational-tool.git
+cd bitcoin-key-educational-tool
+```
+
+2. نصب وابستگی‌ها:
+```bash
+pip install -r requirements.txt
+```
+
+3. اجرای برنامه:
+```bash
+python bitcoin_key_finder.py
+```
+
+## 📋 پیش‌نیازها
+
+- Python 3.7 یا بالاتر
+- کتابخانه‌های زیر:
+  - bitcoinlib
+  - requests
+  - colorama
+
+## 🖼️ نمونه خروجی
+
+```
+    ██████╗ ████████╗ ██████╗    ███████╗██╗███╗   ██╗██████╗ ███████╗██████╗ 
+    ██╔══██╗╚══██╔══╝██╔════╝    ██╔════╝██║████╗  ██║██╔══██╗██╔════╝██╔══██╗
+    ██████╔╝   ██║   ██║         █████╗  ██║██╔██╗ ██║██║  ██║█████╗  ██████╔╝
+    ██╔══██╗   ██║   ██║         ██╔══╝  ██║██║╚██╗██║██║  ██║██╔══╝  ██╔══██╗
+    ██████╔╝   ██║   ╚██████╗    ██║     ██║██║ ╚████║██████╔╝███████╗██║  ██║
+    ╚═════╝    ╚═╝    ╚═════╝    ╚═╝     ╚═╝╚═╝  ╚═══╝╚═════╝ ╚══════╝╚═╝  ╚═╝
+              
+For Educational Purposes Only
+
+⚠️ WARNING: This program is for educational purposes only.
+The probability of finding a key with balance is extremely low (almost zero).
+Randomly finding someone else's Bitcoin private key is unethical and illegal.
+----------------------------------------------------------------------
+
+Enter maximum number of attempts [default=100]: 50
+Enter time limit in minutes [default=5]: 2
+
+Starting search for keys with balance. Time limit: 2 minutes
+
+Attempt 1/50: Checking address 12KLdjdKKAXbkBT7vYoJhFfWEEBYGFeqwX
+Attempt 2/50: Checking address 1AH9owaWpGu8qvy3U8xYGAeDNKxLeCrU9e
+Attempt 3/50: Checking address 1PCEVTsQJxU4v6YgHtvQfvsEFTaX95nY4h
+...
+
+Progress: 10/50 (20.0%) - Time elapsed: 0.50 min - Remaining: 1.50 min
+```
+
+<a name="why-impossible"></a>
+## 🤔 چرا پیدا کردن کلید تصادفی غیرممکن است؟
+
+کلیدهای خصوصی بیت‌کوین 256 بیتی هستند، یعنی 2^256 کلید متفاوت وجود دارد. این عدد بسیار بزرگ است:
+
+- 2^256 ≈ 10^77 (عدد 1 با 77 صفر جلوی آن)
+- کل اتم‌های زمین: حدود 10^50 
+- تعداد کلیدهای ممکن 10^27 برابر تعداد کل اتم‌های زمین است!
+
+اگر هر انسان روی زمین 100 میلیارد کلید در ثانیه بررسی کند، برای بررسی تمام کلیدها به زمانی بیشتر از عمر جهان نیاز خواهیم داشت.
+
+## 📊 کاربردهای آموزشی
+
+این پروژه برای اهداف آموزشی زیر مفید است:
+
+1. درک ساختار کلیدهای خصوصی و آدرس‌های بیت‌کوین
+2. آشنایی با چگونگی تعامل با API های بلاکچین
+3. درک عملی مفاهیم امنیتی و رمزنگاری بیت‌کوین
+4. یادگیری مفاهیم احتمالاتی در فضاهای بزرگ
+
+## 📝 مثال کد
+
+بخشی از کد که نحوه تولید کلید خصوصی و آدرس بیت‌کوین را نشان می‌دهد:
+
+```python
+def generate_private_key_and_address(self):
+    """
+    Generate a real Bitcoin private key and address using bitcoinlib.
+    
+    Returns:
+    - tuple: (private key, Bitcoin address)
+    """
+    try:
+        # Generate new key
+        key = Key()
+        private_key = key.private_hex
+        address = key.address()
+        return private_key, address
+    except Exception as e:
+        self.logger.error(f"{Fore.RED}Error generating key: {e}{Style.RESET_ALL}")
+        # Wait before retrying
+        time.sleep(1)
+        return None, None
+```
+
+## 🚀 برنامه‌های آینده
+
+- افزودن پشتیبانی از کلیدهای Segwit و آدرس‌های bech32
+- افزودن رابط گرافیکی (GUI)
+- پشتیبانی از سایر ارزهای دیجیتال (اتریوم، لایت‌کوین و غیره)
+- افزودن امکان وارد کردن آدرس‌های ذخیره شده برای بررسی موجودی
+
+## 📜 مجوز
+
+این پروژه تحت مجوز MIT منتشر شده است. برای اطلاعات بیشتر، فایل LICENSE را مشاهده کنید.
+
+## 👨‍💻 مشارکت
+
+مشارکت‌های شما استقبال می‌شود! لطفاً یک Issue یا Pull Request ایجاد کنید.
+
+---
+
+*این پروژه صرفاً برای اهداف آموزشی است. لطفاً از آن به‌طور مسئولانه استفاده کنید.*

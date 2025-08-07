@@ -1,0 +1,12 @@
+[36m2025-05-14 01:51:14,077 - INFO - [32mStarting search for keys with balance. Time limit: 1 minutes[0m[0m
+[36m2025-05-14 01:51:14,093 - INFO - Attempt 1/10: Checking address [36m157C2FbK5bjgdtgxzK2Ug3w8enGmDBrFz3[0m[0m
+[36m2025-05-14 01:51:15,719 - INFO - Attempt 2/10: Checking address [36m1KP9pxCgdJyhmo2wUSHdU72A29Wca9wXdE[0m[0m
+[36m2025-05-14 01:51:17,455 - INFO - Attempt 3/10: Checking address [36m15VAVMXGU4NQbMwGRxuDVg5RqjaUnMkbxq[0m[0m
+[36m2025-05-14 01:51:19,279 - INFO - Attempt 4/10: Checking address [36m1zK9twzLGJ5ZZ8SDX1x8UP71hacSJN9yh[0m[0m
+[36m2025-05-14 01:51:20,871 - INFO - Attempt 5/10: Checking address [36m13q4orZYQQfGmj8TMPKTTq8nZ1wHrkAzo7[0m[0m
+[36m2025-05-14 01:51:22,562 - INFO - Attempt 6/10: Checking address [36m1JoWJzHNZN2pnWrsnnpKwLZJX4tR7uUPHG[0m[0m
+[36m2025-05-14 01:51:24,111 - INFO - Attempt 7/10: Checking address [36m12eSS85bHarnY5uzWud5xQGjyUtBT18onv[0m[0m
+[36m2025-05-14 01:51:25,679 - INFO - Attempt 8/10: Checking address [36m14yhXVnqoKFq5QUUW2kktun86fRUHUbfmo[0m[0m
+[36m2025-05-14 01:51:27,203 - INFO - Attempt 9/10: Checking address [36m1C6GAob8toAZJACfMz4LethMBS9358uZGJ[0m[0m
+[36m2025-05-14 01:51:28,875 - INFO - Attempt 10/10: Checking address [36m1Q9LVtNoEnKT4DKTV9BPURCyuz6iRUjcj5[0m[0m
+[36m2025-05-14 01:51:30,689 - INFO - [32mSearch completed. 0 keys with balance found out of 10 attempts.[0m[0m

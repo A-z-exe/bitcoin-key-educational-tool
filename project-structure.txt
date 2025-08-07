@@ -1,0 +1,11 @@
+bitcoin-key-educational-tool/
+├── bitcoin_key_finder.py        # برنامه اصلی
+├── requirements.txt             # وابستگی‌های پروژه
+├── README.md                    # فایل توضیحات پروژه
+├── LICENSE                      # فایل مجوز (MIT)
+├── .gitignore                   # فایل‌های مستثنی از گیت
+├── examples/                    # نمونه‌های اضافی
+│   └── example_output.txt       # نمونه خروجی برنامه
+└── docs/                        # مستندات
+    ├── CONTRIBUTING.md          # راهنمای مشارکت
+    └── SECURITY.md              # دستورالعمل‌های امنیتی
