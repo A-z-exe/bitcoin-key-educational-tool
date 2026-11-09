@@ -1,3 +1,5 @@
+import sys
+
 import requests
 import time
 import json
@@ -7,6 +9,10 @@ from colorama import Fore, Style, init
 
 # Initialize colorama
 init(autoreset=True)
+
+if hasattr(sys.stdout, "reconfigure"):
+    # The banner uses box-drawing characters; legacy Windows codepages crash on them.
+    sys.stdout.reconfigure(encoding="utf-8")
 
 def print_banner():
     """
@@ -26,7 +32,7 @@ def print_banner():
                     ║AmirHosseinZarei ║   ║  Bitcoin Private Key Finder  ║ {Fore.GREEN}v1.1{Fore.CYAN}
                     ╚═════════════════╝   ╚══════════════════════════════╝
                                 
-                🌐 Github:  github.com/A_Z_exe
+                🌐 Github:  github.com/A-z-exe
                 📱 Telegram: t.me/A_Z_exe
                 📷 Instagram: instagram.com/A_Z_exe
     """
